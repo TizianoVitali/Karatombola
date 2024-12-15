@@ -1,0 +1,73 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.userprefs
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS resource forks
+._*
+
+# Files created by macOS Finder
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Ignore IDE settings (e.g., Visual Studio)
+.vscode/
+.idea/
+*.sln.iml
+
+# Ignore logs and debug files
+*.log
+*.tlog
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Ignore generated AOT files (specific to MAUI)
+**/aot-output/
+
+# Ignore Xamarin/MAUI specific files
+**/*.apk
+**/*.ipa
+**/*.app
+**/*.dll.s
+**/*.exe
+**/*.pdb
+**/*.mdb
+**/*.nupkg
+**/*.nuspec
+
+# Ignore crash reports
+*.crash
+
+# Ignore archives
+*.tar
+*.zip
+*.gz
+*.7z
+*.rar
+*.tgz
+
+# Ignore any other temporary or build artifacts
+*.cache
+*.pid
+*.seed
+*.pid.lock
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal

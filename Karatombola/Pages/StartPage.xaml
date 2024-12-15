@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karatombola.Pages.StartPage"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout Margin="30,180">
+
+        <Label
+            Text="KARATOMBOLA"
+            Style="{StaticResource Headline}"
+            FontFamily="BriceBlack"
+            TextColor="Black"
+            FontSize="120"/>
+
+        <Grid RowSpacing="40"
+              ColumnSpacing="50"
+              HorizontalOptions="Center"
+              Margin="0,150">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Padding="50"
+                x:Name="btn_k80"
+                FontSize="80"
+                Text="'80"
+                FontFamily="BriceBlack"
+                BackgroundColor="#FFA8D5FF"
+                BorderWidth="6"
+                BorderColor="Black"
+                CornerRadius="0"
+                Clicked="OnChoseClick"
+                Grid.Row="0"
+                Grid.Column="0"
+                IsEnabled="False"/>
+
+            <Button
+                Padding="30"
+                x:Name="btn_listk80"
+                FontSize="35"
+                Text="Lista brani"
+                FontFamily="BriceBlack"
+                BackgroundColor="#FFD1B4FC"
+                BorderWidth="6"
+                BorderColor="Black"
+                CornerRadius="0"
+                Clicked="OnSongListClick"
+                Grid.Row="1"
+                Grid.Column="0"
+                IsEnabled="False"/>
+
+            <Button
+                Padding="50"
+                x:Name="btn_k90"
+                FontSize="80"
+                Text="'90"
+                FontFamily="BriceBlack"
+                BackgroundColor="#FFFF9898"
+                BorderWidth="6"
+                BorderColor="Black"
+                CornerRadius="0"
+                Clicked="OnChoseClick"
+                Grid.Row="0"
+                Grid.Column="1"
+                IsEnabled="False"/>
+
+            <Button
+                Padding="30"
+                x:Name="btn_listk90"
+                FontSize="35"
+                Text="Lista brani"
+                FontFamily="BriceBlack"
+                BackgroundColor="#FFFEFFAC"
+                BorderWidth="6"
+                BorderColor="Black"
+                CornerRadius="0"
+                Clicked="OnSongListClick"
+                Grid.Row="1"
+                Grid.Column="1"
+                IsEnabled="False"/>
+
+            <Button
+                Padding="50"
+                x:Name="btn_k2000"
+                FontSize="80"
+                Text="2000"
+                FontFamily="BriceBlack"
+                BackgroundColor="#FFD5DB9C"
+                BorderWidth="6"
+                BorderColor="Black"
+                CornerRadius="0"
+                Clicked="OnChoseClick"
+                Grid.Row="0"
+                Grid.Column="2"/>
+
+            <Button
+                Padding="30"
+                x:Name="btn_listk2000"
+                FontSize="35"
+                Text="Lista brani"
+                FontFamily="BriceBlack"
+                BackgroundColor="White"
+                BorderWidth="6"
+                BorderColor="Black"
+                CornerRadius="0"
+                Clicked="OnSongListClick"
+                Grid.Row="1"
+                Grid.Column="2"/>
+
+            <Button
+                Padding="50"
+                x:Name="btn_kdisney"
+                FontSize="80"
+                Text="Disney"
+                FontFamily="Disney"
+                BackgroundColor="#FFD2AEE7"
+                BorderWidth="6"
+                BorderColor="Black"
+                CornerRadius="0"
+                Clicked="OnChoseClick"
+                Grid.Row="0"
+                Grid.Column="3"/>
+
+            <Button
+                Padding="30"
+                x:Name="btn_listkdisney"
+                FontSize="35"
+                Text="Lista brani"
+                FontFamily="Disney"
+                BackgroundColor="#FFD2AEE7"
+                BorderWidth="6"
+                BorderColor="Black"
+                CornerRadius="0"
+                Clicked="OnSongListClick"
+                Grid.Row="1"
+                Grid.Column="3"/>
+        </Grid>
+
+        <Button
+            x:Name="btn_back"
+            Text="Indietro"
+            FontSize="30"
+            SemanticProperties.Hint="Clicca per tornare alla pagina iniziale!"
+            Clicked="OnBackClick"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            BackgroundColor="#FFD7AFFF"
+            BorderWidth="6"
+            BorderColor="Black"
+            CornerRadius="0"
+            Margin="60,0,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

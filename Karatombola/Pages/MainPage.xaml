@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karatombola.Pages.MainPage"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout
+        Padding="30,180"
+        Spacing="25">
+
+        <Label
+            Text="KARATOMBOLA"
+            Style="{StaticResource Headline}"
+            FontFamily="BriceBlack"
+            TextColor="Black"
+            FontSize="150"/>
+
+        <FlexLayout Padding="0,40"
+                    Margin="70"
+                    AlignItems="Stretch"
+                    HorizontalOptions="Center">
+
+            <Image Source="img_home.png"
+                   HeightRequest="670"
+                   HorizontalOptions="Start"/>
+
+            <AbsoluteLayout VerticalOptions="Center">
+
+                <Button
+                    x:Name="btn_start"
+                    FontSize="60"
+                    Text="Inizia"
+                    FontFamily="BriceBlack"
+                    SemanticProperties.Hint="Clicca per iniziare una nuova partita!"
+                    Clicked="OnStartClick"
+                    AbsoluteLayout.LayoutBounds="-130, 30, 500, 120"
+                    AbsoluteLayout.LayoutFlags="None"
+                    BackgroundColor="Yellow"
+                    BorderWidth="6"
+                    BorderColor="Black"
+                    CornerRadius="0"/>
+
+                <Button
+                    Padding="20"
+                    x:Name="btn_rules"
+                    FontSize="60"
+                    Text="Regole"
+                    FontFamily="BriceBlack"
+                    AbsoluteLayout.LayoutBounds="-220, 200, 500, 120"
+                    AbsoluteLayout.LayoutFlags="None"
+                    SemanticProperties.Hint="Clicca per leggere il regolamento!"
+                    Clicked="OnRulesClick"
+                    BackgroundColor="White"
+                    BorderWidth="6"
+                    BorderColor="Black"
+                    CornerRadius="0"/>
+
+            </AbsoluteLayout>
+        </FlexLayout>
+
+        <BoxView VerticalOptions="Fill"
+                 HeightRequest="70"
+                 Background="Transparent"/>
+    </VerticalStackLayout>
+</ContentPage>

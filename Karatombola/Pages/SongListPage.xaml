@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karatombola.Pages.SongListPage"
+             Shell.NavBarIsVisible="False">
+
+    <VerticalStackLayout Margin="100, 100, 100, 0">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Text="Lista brani"
+                Style="{StaticResource Headline}"
+                FontFamily="BriceBlack"
+                TextColor="Black"
+                FontSize="80"
+                Grid.Column="0"/>
+
+            <Label
+                x:Name="lbl_type"
+                Style="{StaticResource Headline}"
+                FontFamily="BriceBlack"
+                TextColor="Black"
+                FontSize="120"
+                Grid.Column="1"
+                HorizontalOptions="End"/>
+        </Grid>
+
+        <Grid Margin="0,50,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <!-- <ColumnDefinition Width="Auto"/> -->
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Text="#"
+                Style="{StaticResource Headline}"
+                TextColor="Black"
+                FontSize="45"
+                HorizontalOptions="Start"
+                Grid.Column="0"/>
+            <Label
+                Text="Titolo"
+                Style="{StaticResource Headline}"
+                TextColor="Black"
+                FontSize="45"
+                HorizontalOptions="Start"
+                Grid.Column="1"/>
+
+            <Label
+                Text="Artista"
+                Style="{StaticResource Headline}"
+                TextColor="Black"
+                FontSize="45"
+                Grid.Column="2"
+                HorizontalOptions="Start"/>
+
+            <!-- <Label
+                Text="Link YouTube"
+                Style="{StaticResource Headline}"
+                TextColor="Black"
+                FontSize="45"
+                Grid.Column="3"
+                HorizontalOptions="End"/> -->
+
+        </Grid>
+
+        <ScrollView HeightRequest="910">
+            <Grid x:Name="SongTable"
+                  Padding="0,10"
+                  ColumnSpacing="10"
+                  RowSpacing="30"/>
+        </ScrollView>
+
+        <Button
+            x:Name="btn_back"
+            Text="Indietro"
+            FontSize="30"
+            SemanticProperties.Hint="Clicca per tornare alla pagina iniziale!"
+            Clicked="OnBackClick"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            BackgroundColor="#FFD7AFFF"
+            BorderWidth="6"
+            BorderColor="Black"
+            CornerRadius="0"
+            Margin="0,40,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

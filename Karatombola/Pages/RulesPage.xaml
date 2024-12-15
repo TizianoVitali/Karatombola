@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karatombola.Pages.RulesPage"
+             Shell.NavBarIsVisible="False">
+       <VerticalStackLayout Margin="100, 100, 100, 0">
+
+              <Label
+                     Text="Regolamento"
+                     Style="{StaticResource Headline}"
+                     TextColor="Black"
+                     FontFamily="BriceBlack"
+                     FontAttributes="Bold"
+                     FontSize="150"/>
+
+              <ScrollView HeightRequest="950"
+                          Margin="300, 57, 300, 0">
+                     <StackLayout Padding="20"
+                                  Spacing="10">
+
+                            <Label Text="1. Scopo del gioco"
+                                   FontSize="40"
+                                   FontAttributes="Bold"/>
+                            <Label Text="Karatombola è una variante divertente della Tombola tradizionale. Al posto dei numeri, vengono estratte canzoni. Il vincitore non solo completa la combinazione richiesta sulla propria cartella, ma deve anche cantare una delle canzoni che lo hanno condotto alla vittoria."
+                                   FontSize="27"
+                                   Margin="45,0"/>
+
+                            <Label Text="2. Preparazione del gioco"
+                                   FontSize="40"
+                                   FontAttributes="Bold"
+                                   Margin="0,30,0,0"/>
+                            <Label Text="1. Distribuire una o più cartelle a ciascun giocatore."
+                                   FontSize="27"
+                                   Margin="45,0"/>
+                            <Label Text="2. Preparare il sistema di estrazione delle canzoni."
+                                   FontSize="27"
+                                   Margin="45,0"/>
+
+                            <Label Text="3. Svolgimento del gioco"
+                                   FontSize="40"
+                                   FontAttributes="Bold"
+                                   Margin="0,30,0,0"/>
+                            <Label Text="1. Estrazione delle canzoni: il sistema estrae una canzone che verrà mostrata a schermo mentre risuonerà in sottofondo."
+                                   FontSize="27"
+                                   Margin="45,0"/>
+                            <Label Text="2. Marcatura sulla cartella: I giocatori controllano se il titolo estratto è presente sulla loro cartella e, in caso positivo, lo segnano."
+                                   FontSize="27"
+                                   Margin="45,0"/>
+                            <Label Text="3. Combinazioni vincenti: Le combinazioni vincenti sono le stesse della tombola tradizionale:"
+                                   FontSize="27"
+                                   Margin="45,0"/>
+                            <Label Text="- Ambo: Due canzoni sulla stessa riga."
+                                   FontSize="27"
+                                   Margin="75,0"/>
+                            <Label Text="- Terna: Tre canzoni sulla stessa riga."
+                                   FontSize="27"
+                                   Margin="75,0"/>
+                            <Label Text="- Quaterna: Quattro canzoni sulla stessa riga."
+                                   FontSize="27"
+                                   Margin="75,0"/>
+                            <Label Text="- Cinquina: Cinque canzoni sulla stessa riga."
+                                   FontSize="27"
+                                   Margin="75,0"/>
+                            <Label Text="- Karatombola: Tutte le canzoni presenti sulla cartella."
+                                   FontSize="27"
+                                   Margin="75,0"/>
+
+                            <Label Text="4. Regole di vittoria e penalità"
+                                   FontSize="40"
+                                   FontAttributes="Bold"
+                                   Margin="0,30,0,0"/>
+                            <Label Text="1. Dichiarazione della vittoria: Quando un giocatore completa una combinazione vincente, deve dichiararlo immediatamente."
+                                   FontSize="27"
+                                   Margin="45,0"/>
+                            <Label Text="2. Esibizione cnora: Per confermare la vittoria, il giocatore deve scegliere una delle canzoni presenti sulla sua cartella vincente e cantarla al karaoke."
+                                   FontSize="27"
+                                   Margin="45,0"/>
+                            <Label Text="- Se il giocatore si rifiuta di cantare, la vittoria non viene convalidata e il gioco prosegue."
+                                   FontSize="27"
+                                   Margin="75,0"/>
+                            <Label Text="- Se ci sono due o più vincitori in contemporanea si canterà in duetto, trio ecc..."
+                                   FontSize="27"
+                                   Margin="75,0"/>
+                            <Label Text="3. Controllo della cartella: Gli altri giocatori possono verificare la cartella del vincitore per assicurarsi che la combinazione dichiarata sia corretta."
+                                   FontSize="27"
+                                   Margin="45,0"/>
+
+                     </StackLayout>
+              </ScrollView>
+
+              <Button
+                     x:Name="btn_back"
+                     Text="Indietro"
+                     FontSize="30"
+                     Clicked="OnBackClick"
+                     HorizontalOptions="Start"
+                     VerticalOptions="End"
+                     BackgroundColor="#FFD7AFFF"
+                     BorderWidth="6"
+                     BorderColor="Black"
+                     CornerRadius="0"
+                     Margin="30,0,0,0"/>
+              <Label
+                     Text="v1.0"
+                     Style="{StaticResource Headline}"
+                     TextColor="Black"
+                     FontSize="18"
+                     HorizontalOptions="End"
+                     VerticalOptions="End"/>
+       </VerticalStackLayout>
+</ContentPage>

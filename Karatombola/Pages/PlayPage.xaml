@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Karatombola.Pages.PlayPage"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout Margin="100, 100, 100, 0">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Text="KARATOMBOLA"
+                Style="{StaticResource Headline}"
+                FontFamily="BriceBlack"
+                TextColor="Black"
+                FontSize="45"
+                Grid.Column="0"/>
+
+            <Label
+                x:Name="lbl_type"
+                Style="{StaticResource Headline}"
+                FontFamily="BriceBlack"
+                TextColor="Black"
+                FontSize="45"
+                Grid.Column="1"
+                HorizontalOptions="End"/>
+        </Grid>
+
+        <Button
+            x:Name="btn_start"
+            Text="INIZIAMO!"
+            FontSize="150"
+            Clicked="OnStartClick"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            BackgroundColor="#FFD7AFFF"
+            BorderWidth="6"
+            BorderColor="Black"
+            CornerRadius="0"
+            Margin="0,300"/>
+
+        <Label
+            x:Name="lbl_counter"
+            Text=""
+            IsVisible="False"
+            Style="{StaticResource Headline}"
+            FontFamily="BriceBlack"
+            TextColor="Black"
+            FontSize="190"
+            HorizontalOptions="Center"
+            Margin="0,300"
+            Padding="50"/>
+
+        <AbsoluteLayout Margin="0,120,0,0"
+                        x:Name="grid_play"
+                        IsVisible="False">
+            <Label
+                x:Name="lbl_title"
+                Style="{StaticResource Headline}"
+                FontFamily="BriceBlack"
+                TextColor="Green"
+                FontSize="150"
+                AbsoluteLayout.LayoutBounds="0, 0"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <Label
+                x:Name="lbl_artist"
+                Style="{StaticResource Headline}"
+                TextColor="Black"
+                FontSize="50"
+                AbsoluteLayout.LayoutBounds="0, 160"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <ImageButton
+                Source="img_karaoke.png"
+                Clicked="OnLinkClick"
+                Scale="0.5"
+                AbsoluteLayout.LayoutBounds="1700, 130"
+                AbsoluteLayout.LayoutFlags="None"
+                ZIndex="999"/>
+
+            <ImageButton
+                x:Name="btn_ambo"
+                Source="img_ambo.png"
+                Clicked="OnWinClick"
+                Scale="0.55"
+                AbsoluteLayout.LayoutBounds="1250, 420"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <ImageButton
+                x:Name="btn_terno"
+                Source="img_terno.png"
+                Clicked="OnWinClick"
+                IsVisible="false"
+                Scale="0.55"
+                AbsoluteLayout.LayoutBounds="1170, 420"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <ImageButton
+                x:Name="btn_quaterna"
+                Source="img_quaterna.png"
+                Clicked="OnWinClick"
+                IsVisible="false"
+                Scale="0.55"
+                AbsoluteLayout.LayoutBounds="875, 420"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <ImageButton
+                x:Name="btn_cinquina"
+                Source="img_cinquina.png"
+                Clicked="OnWinClick"
+                IsVisible="false"
+                Scale="0.55"
+                AbsoluteLayout.LayoutBounds="935, 420"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <ImageButton
+                x:Name="btn_tombola"
+                Source="img_tombola.png"
+                Clicked="OnWinClick"
+                IsVisible="false"
+                Scale="0.55"
+                AbsoluteLayout.LayoutBounds="885, 360"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <!-- COMANDI AUDIO -->
+
+            <Label
+                x:Name="lbl_songCurrentPosition"
+                Style="{StaticResource Headline}"
+                FontSize="25"
+                TextColor="Black"
+                AbsoluteLayout.LayoutBounds="0, 550"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <Label
+                x:Name="lbl_songDuration"
+                Style="{StaticResource Headline}"
+                FontSize="25"
+                TextColor="Black"
+                AbsoluteLayout.LayoutBounds="590, 550"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <Slider
+                x:Name="song_slider"
+                ThumbColor="Green"
+                MinimumTrackColor="Chocolate"
+                AbsoluteLayout.LayoutBounds="0, 600, 625, 20"
+                AbsoluteLayout.LayoutFlags="None"
+                ValueChanged="OnSliderValueChanged"/>
+
+            <ImageButton
+                x:Name="btn_prevList"
+                Source="playlist.png"
+                Clicked="OnOpenModalClicked"
+                Scale="0.25"
+                AbsoluteLayout.LayoutBounds="-200, 520"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <ImageButton
+                x:Name="btn_play"
+                Source="play.png"
+                Clicked="OnPlayClick"
+                IsVisible="false"
+                Scale="0.25"
+                AbsoluteLayout.LayoutBounds="0, 520"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <ImageButton
+                x:Name="btn_pause"
+                Source="pause.png"
+                Clicked="OnPauseClick"
+                Scale="0.25"
+                AbsoluteLayout.LayoutBounds="0, 520"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <ImageButton
+                x:Name="btn_next"
+                Source="next.png"
+                Clicked="OnNextClick"
+                Scale="0.25"
+                AbsoluteLayout.LayoutBounds="250, 520"
+                AbsoluteLayout.LayoutFlags="None"/>
+
+            <!-- FINE COMANDI AUDIO -->
+
+            <Label
+                x:Name="lbl_drawCounter"
+                Style="{StaticResource Headline}"
+                TextColor="Black"
+                FontSize="30"
+                AbsoluteLayout.LayoutBounds="2060, 930"
+                AbsoluteLayout.LayoutFlags="None"
+                IsVisible="False"/>
+
+        </AbsoluteLayout>
+
+        <Button
+            x:Name="btn_back"
+            Text="Indietro"
+            FontSize="30"
+            SemanticProperties.Hint="Clicca per tornare alla pagina iniziale!"
+            Clicked="OnBackClick"
+            HorizontalOptions="Start"
+            VerticalOptions="End"
+            BackgroundColor="#FFD7AFFF"
+            BorderWidth="6"
+            BorderColor="Black"
+            CornerRadius="0"
+            Margin="0,-60,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>
