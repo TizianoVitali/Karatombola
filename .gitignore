@@ -73,5 +73,5 @@ Icon?
 *.sqlite-wal
 
 # Song files
-Resources/Raw/songs/k_2000/
-Resources/Raw/songs/k_disney/
+Karatombola/Resources/Raw/songs/k_2000/
+Karatombola/Resources/Raw/songs/k_disney/
