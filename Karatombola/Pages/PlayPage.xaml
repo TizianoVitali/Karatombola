@@ -3,7 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Karatombola.Pages.PlayPage"
              Shell.NavBarIsVisible="False">
-    <VerticalStackLayout Margin="100, 100, 100, 0">
+
+    <VerticalStackLayout Padding="100, 100, 100, 0">
+        <VerticalStackLayout.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FFF7AD"
+                              Offset="0.1"/>
+                <GradientStop Color="#FFA9F9"
+                              Offset="1.0"/>
+            </LinearGradientBrush>
+        </VerticalStackLayout.Background>
+
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -17,7 +27,8 @@
                 FontFamily="BriceBlack"
                 TextColor="Black"
                 FontSize="45"
-                Grid.Column="0"/>
+                Grid.Column="0"
+                Opacity="0.2"/>
 
             <Label
                 x:Name="lbl_type"
@@ -26,21 +37,24 @@
                 TextColor="Black"
                 FontSize="45"
                 Grid.Column="1"
-                HorizontalOptions="End"/>
+                HorizontalOptions="End"
+                Opacity="0.2"/>
         </Grid>
 
         <Button
             x:Name="btn_start"
             Text="INIZIAMO!"
             FontSize="150"
+            FontFamily="DoyleRegular"
             Clicked="OnStartClick"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            BackgroundColor="#FFD7AFFF"
-            BorderWidth="6"
+            BackgroundColor="#60FFFFFF"
+            BorderWidth="10"
             BorderColor="Black"
-            CornerRadius="0"
-            Margin="0,300"/>
+            CornerRadius="20"
+            Margin="0,420"
+            Padding="80,40"/>
 
         <Label
             x:Name="lbl_counter"
@@ -51,18 +65,18 @@
             TextColor="Black"
             FontSize="190"
             HorizontalOptions="Center"
-            Margin="0,300"
-            Padding="50"/>
+            Margin="0,475"/>
 
-        <AbsoluteLayout Margin="0,120,0,0"
+        <AbsoluteLayout Margin="0,122,0,0"
                         x:Name="grid_play"
                         IsVisible="False">
+
             <Label
                 x:Name="lbl_title"
                 Style="{StaticResource Headline}"
                 FontFamily="BriceBlack"
-                TextColor="Green"
-                FontSize="150"
+                TextColor="Black"
+                FontSize="140"
                 AbsoluteLayout.LayoutBounds="0, 0"
                 AbsoluteLayout.LayoutFlags="None"/>
 
@@ -71,6 +85,7 @@
                 Style="{StaticResource Headline}"
                 TextColor="Black"
                 FontSize="50"
+                FontFamily="DoyleRegular"
                 AbsoluteLayout.LayoutBounds="0, 160"
                 AbsoluteLayout.LayoutFlags="None"/>
 
@@ -133,7 +148,8 @@
                 Style="{StaticResource Headline}"
                 FontSize="25"
                 TextColor="Black"
-                AbsoluteLayout.LayoutBounds="0, 550"
+                FontFamily="DoyleRegular"
+                AbsoluteLayout.LayoutBounds="0, 580"
                 AbsoluteLayout.LayoutFlags="None"/>
 
             <Label
@@ -141,14 +157,16 @@
                 Style="{StaticResource Headline}"
                 FontSize="25"
                 TextColor="Black"
-                AbsoluteLayout.LayoutBounds="590, 550"
+                FontFamily="DoyleRegular"
+                AbsoluteLayout.LayoutBounds="460, 580"
                 AbsoluteLayout.LayoutFlags="None"/>
 
             <Slider
                 x:Name="song_slider"
-                ThumbColor="Green"
-                MinimumTrackColor="Chocolate"
-                AbsoluteLayout.LayoutBounds="0, 600, 625, 20"
+                ThumbColor="Black"
+                MaximumTrackColor="#6F000000"
+                MinimumTrackColor="Black"
+                AbsoluteLayout.LayoutBounds="0, 630, 520, 20"
                 AbsoluteLayout.LayoutFlags="None"
                 ValueChanged="OnSliderValueChanged"/>
 
@@ -182,7 +200,7 @@
                 Source="next.png"
                 Clicked="OnNextClick"
                 Scale="0.25"
-                AbsoluteLayout.LayoutBounds="250, 520"
+                AbsoluteLayout.LayoutBounds="200, 520"
                 AbsoluteLayout.LayoutFlags="None"/>
 
             <!-- FINE COMANDI AUDIO -->
@@ -202,14 +220,14 @@
             x:Name="btn_back"
             Text="Indietro"
             FontSize="30"
-            SemanticProperties.Hint="Clicca per tornare alla pagina iniziale!"
+            TextColor="#FFD1C7"
+            FontFamily="DoyleRegular"
             Clicked="OnBackClick"
             HorizontalOptions="Start"
             VerticalOptions="End"
-            BackgroundColor="#FFD7AFFF"
-            BorderWidth="6"
-            BorderColor="Black"
-            CornerRadius="0"
-            Margin="0,-60,0,0"/>
+            BackgroundColor="Black"
+            BorderWidth="5"
+            CornerRadius="12"
+            Margin="0,-35,0,0"/>
     </VerticalStackLayout>
 </ContentPage>

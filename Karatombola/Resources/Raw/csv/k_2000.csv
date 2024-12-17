@@ -1,91 +1,91 @@
-Title,Artist
-Morirò da Re,Måneskin
-Vivo per lei,"Andrea Bocelli,Giorgia"
-Mille giorni di te e di me,Claudio Baglioni
-Fatti avanti amore,Nek
-Meraviglioso,Negramaro
-Tre Parole,Valeria Rossi
-Ti Vorrei Sollevare,"Elisa,Giuliano Sangiorgi"
-Volare,"Fabio Rovazzi,Gianni Morandi"
-Il Più Grande Spettacolo Dopo Il Big Bang,Jovanotti
-Gli altri siamo noi,Umberto Tozzi
-Il cielo,Renato Zero
-La forza della vita,Paolo Vallesi
-Luna,Gianni Togni
-Bruci la città,Irene Grandi
-Controvento,Arisa
-Non sono una signora,Loredana Bertè
-Salirò,Daniele Silvestri
-Una canzone d'amore,883
-Non c'è,Laura Pausini
-Gocce di memoria,Giorgia
-Non me lo so spiegare,Tiziano Ferro
-Certe notti,Ligabue
-Una Vita In Vacanza,Lo Stato Sociale
-Un'emozione per sempre,Eros Ramazzotti
-L'amore si odia (feat. Fiorella Mannoia),"Noemi,Fiorella Mannoia"
-Vieni A Vedere Perchè,Cesare Cremonini
-Esseri umani,Marco Mengoni
-Viceversa,Francesco Gabbani
-Vivere,Vasco Rossi
-Quanto Tempo E Ancora,Biagio Antonacci
-Sei nell'anima,Gianna Nannini
-Il mio canto libero,Lucio Battisti
-Viva l'Italia,Francesco De Gregori
-L'Anno Che Verrà,Lucio Dalla
-Sotto Il Segno Dei Pesci,Antonello Venditti
-Gianna,Rino Gaetano
-T'innamorerai,Marco Masini
-Vorrei incontrarti fra cent'anni (feat. Tosca),"Ron,Tosca"
-Ti lascerò,"Anna Oxa,Fausto Leali"
-Azzurro,Adriano Celentano
-Sapore di sale,Gino Paoli
-Erba di casa mia,Massimo Ranieri
-"Grande, grande, grande - 2001 Remaster",Mina
-Amami,Emma
-Che sia benedetta,Fiorella Mannoia
-Almeno tu nell'universo - Original Version,Mia Martini
-Napule È,Pino Daniele
-Nell'aria,Marcella Bella
-Tu Sei L'Unica Donna Per Me - 2005 Remaster,Alan Sorrenti
-'A canzuncella,Alunni Del Sole
-Maledetta primavera,Loretta Goggi
-Anima Mia,Cugini Di Campagna
-Io vagabondo (Che non sono altro),Nomadi
-Non si può morire dentro,Gianni Bella
-Monna Lisa,Ivan Graziani
-Quella carezza della sera,New Trolls
-La faccia delle donne (feat. Vasco Rossi),"Stadio,Vasco Rossi"
-Pensiero stupendo,Patty Pravo
-Teorema,Marco Ferradini
-Se stiamo insieme,Riccardo Cocciante
-La notte dei pensieri,Michele Zarrillo
-L'estate sta finendo,Righeira
-Tanti auguri,Raffaella Carrà
-Bella d'estate,Mango
-Il gatto e la volpe,Edoardo Bennato
-La mia banda suona il rock,Ivano Fossati
-Ti Fa Stare Bene,Caparezza
-Novembre,Giusy Ferreri
-Comunque andare,Alessandra Amoroso
-Due Destini,Tiromancino
-Ci Sarai,Francesco Renga
-Destinazione Paradiso,Gianluca Grignani
-Ancora,Eduardo De Crescenzo
-Good Times,Ghali
-Fai rumore,Diodato
-Fare l'amore,Mietta
-Non Avere Paura,Tommaso Paradiso
-Vita,"Lucio Dalla,Gianni Morandi"
-Mi Manchi Ancora - Remaster 1998,Matia Bazar
-Due,Raf
-Baila Morena,"Zucchero,Maná"
-Luca lo stesso,Luca Carboni
-Magnolia,Negrita
-Sola Una Volta,Alex Britti
-Arriverà (Feat. Francesco Renga),"Modà,Francesco Renga"
-Pensiero,Pooh
-Non voglio mica la luna,Fiordaliso
-Splendido splendente,Donatella Rettore
-Bandiera Bianca - Remastered 2021,Franco Battiato
-Spaccacuore,Samuele Bersani
+Title,Artist,FileName
+Morirò da Re,Måneskin,moriro_da_re.mp3
+Fatti avanti amore,Nek,fatti_avanti_amore.mp3
+Meraviglioso,Negramaro,meraviglioso.mp3
+Tre Parole,Valeria Rossi,tre_parole.mp3
+Ti Vorrei Sollevare,"Elisa,Giuliano Sangiorgi",ti_vorrei_sollevare.mp3
+Volare,"Fabio Rovazzi,Gianni Morandi",volare.mp3
+Il Più Grande Spettacolo Dopo Il Big Bang,Jovanotti,il_piu_grande_spettacolo_dopo_il_big_bang.mp3
+Bruci la città,Irene Grandi,bruci_la_citta.mp3
+Salirò,Daniele Silvestri,saliro.mp3
+Gocce di memoria,Giorgia,gocce_di_memoria.mp3
+Una Vita In Vacanza,Lo Stato Sociale,una_vita_in_vacanza.mp3
+Un'emozione per sempre,Eros Ramazzotti,un_emozione_per_sempre.mp3
+L'amore si odia,"Noemi,Fiorella Mannoia",l_amore_si_odia.mp3
+Esseri umani,Marco Mengoni,esseri_umani.mp3
+Viceversa,Francesco Gabbani,viceversa.mp3
+Sei nell'anima,Gianna Nannini,sei_nell_anima.mp3
+Amami,Emma,amami.mp3
+Napule È,Pino Daniele,napule_e.mp3
+Ti Fa Stare Bene,Caparezza,ti_fa_stare_bene.mp3
+Novembre,Giusy Ferreri,novembre.mp3
+Due Destini,Tiromancino,due_destini.mp3
+Good Times,Ghali,good_times.mp3
+Fai rumore,Diodato,fai_rumore.mp3
+Baila Morena,"Zucchero,Maná",baila_morena.mp3
+Luca lo stesso,Luca Carboni,luca_lo_stesso.mp3
+Magnolia,Negrita,magnolia.mp3
+Sola Una Volta,Alex Britti,sola_una_volta.mp3
+Arriverà,"Modà,Francesco Renga",arrivera.mp3
+La notte,Arisa,la_notte.mp3
+Vuoto a perdere,Noemi,vuoto_a_perdere.mp3
+Infinito,Raf,infinito.mp3
+Angelo,Francesco Renga,angelo.mp3
+Se telefonando,Nek,se_telefonando.mp3
+La Mia Signorina,Neffa,la_mia_signorina.mp3
+Occidentali's Karma,Francesco Gabbani,occidentali_s_karma.mp3
+L'essenziale,Marco Mengoni,l_essenziale.mp3
+Boy Band,Velvet,boy_band.mp3
+50 Special,Lùnapop,50_special.mp3
+Gli Ostacoli Del Cuore,"Elisa,Ligabue",gli_ostacoli_del_cuore.mp3
+Tu sei lei,Ligabue,tu_sei_lei.mp3
+Sere Nere,Tiziano Ferro,sere_nere.mp3
+Ringo Starr,Pinguini Tattici Nucleari,ringo_starr.mp3
+Fuori Dal Tunnel,Caparezza,fuori_dal_tunnel.mp3
+Cleptomania,Sugarfree,cleptomania.mp3
+Non vivo più senza te,Biagio Antonacci,non_vivo_piu_senza_te.mp3
+Rotolando Verso Sud,Negrita,rotolando_verso_sud.mp3
+Per dimenticare,Zero Assoluto,per_dimenticare.mp3
+Magnifico,"Fedez,Francesca Michielin",magnifico.mp3
+Vamos a bailar,Paola & Chiara,vamos_a_bailar.mp3
+Apri tutte le porte,Gianni Morandi,apri_tutte_le_porte.mp3
+Domani smetto,Articolo 31,domani_smetto.mp3
+Musica leggerissima,"Colapesce,Dimartino",musica_leggerissima.mp3
+Baciami Ancora,Jovanotti,baciami_ancora.mp3
+Il Solito Sesso,Max Gazzè,il_solito_sesso.mp3
+A Te,Jovanotti,a_te.mp3
+Dedicato A Te,Le Vibrazioni,dedicato_a_te.mp3
+Mary,Gemelli Diversi,mary.mp3
+In Italia,"Fabri Fibra,Gianna Nannini",in_italia.mp3
+Dicono Di Me,Cesare Cremonini,dicono_di_me.mp3
+Diventerai una star,Finley,diventerai_una_star.mp3
+Rosso relativo,Tiziano Ferro,rosso_relativo.mp3
+Parlami D'Amore,Negramaro,parlami_d_amore.mp3
+Gioia Infinita,Negrita,gioia_infinita.mp3
+Un Senso,Vasco Rossi,un_senso.mp3
+Calma e sangue freddo,Luca Dirisio,calma_e_sangue_freddo.mp3
+La regola dell'amico,883,la_regola_dell_amico.mp3
+Sincerità,Arisa,sincerita.mp3
+La paranza,Daniele Silvestri,la_paranza.mp3
+Veramente,Mario Venuti,veramente.mp3
+Io canto,Laura Pausini,io_canto.mp3
+Felicità puttana,Thegiornalisti,felicita_puttana.mp3
+Ovunque Sarai,Irama,ovunque_sarai.mp3
+Mediterranea,Irama,mediterranea.mp3
+Il mio giorno più bello nel mondo,Francesco Renga,il_mio_giorno_più_bello_nel_mondo.mp3
+Bellissima,Annalisa,bellissima.mp3
+Due Vite,Marco Mengoni,due_vite.mp3
+Ciao Ciao,La rappresentante di lista,ciao_ciao.mp3
+SUPEREROI,Mr.Rain,supereroi.mp3
+16 marzo,"Achille Lauro,Gow Tribe",16_marzo.mp3
+Estate,Negramaro,estate.mp3
+La Vita Com'è,Max Gazzè,la_vita_com_e.mp3
+Fare a meno di te,Due Di Picche,fare_a_meno_di_te.mp3
+Pazza,Loredana Bertè,pazza.mp3
+Unica,Antonello Venditti,unica.mp3
+Occhi,Zucchero,occhi.mp3
+ZITTI E BUONI,Måneskin,zitti_e_buoni.mp3
+Latin Lover,Cesare Cremonini,latin_lover.mp3
+L'esercito del selfie,"Takagi & Ketra,Lorenzo Fragola,Arisa",l_esercito_del_selfie.mp3
+Bye bye,Annalisa,bye_bye.mp3
+Soldi,Mahmood,soldi.mp3

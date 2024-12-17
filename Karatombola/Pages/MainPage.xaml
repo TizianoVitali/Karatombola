@@ -3,9 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Karatombola.Pages.MainPage"
              Shell.NavBarIsVisible="False">
+
     <VerticalStackLayout
         Padding="30,180"
         Spacing="25">
+        <VerticalStackLayout.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FFF7AD"
+                              Offset="0.1"/>
+                <GradientStop Color="#FFA9F9"
+                              Offset="1.0"/>
+            </LinearGradientBrush>
+        </VerticalStackLayout.Background>
 
         <Label
             Text="KARATOMBOLA"
@@ -29,12 +38,13 @@
                     x:Name="btn_start"
                     FontSize="60"
                     Text="Inizia"
+                    TextColor="Black"
                     FontFamily="BriceBlack"
                     SemanticProperties.Hint="Clicca per iniziare una nuova partita!"
                     Clicked="OnStartClick"
                     AbsoluteLayout.LayoutBounds="-130, 30, 500, 120"
                     AbsoluteLayout.LayoutFlags="None"
-                    BackgroundColor="Yellow"
+                    BackgroundColor="#FFF7AD"
                     BorderWidth="6"
                     BorderColor="Black"
                     CornerRadius="0"/>
@@ -44,12 +54,12 @@
                     x:Name="btn_rules"
                     FontSize="60"
                     Text="Regole"
-                    FontFamily="BriceBlack"
+                    FontFamily="DoyleRegular"
                     AbsoluteLayout.LayoutBounds="-220, 200, 500, 120"
                     AbsoluteLayout.LayoutFlags="None"
                     SemanticProperties.Hint="Clicca per leggere il regolamento!"
                     Clicked="OnRulesClick"
-                    BackgroundColor="White"
+                    BackgroundColor="#FFA9F9"
                     BorderWidth="6"
                     BorderColor="Black"
                     CornerRadius="0"/>

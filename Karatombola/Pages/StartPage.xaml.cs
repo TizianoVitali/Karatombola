@@ -15,7 +15,7 @@ public partial class StartPage : ContentPage
 
 	private async void OnChoseClick(object sender, EventArgs e)
 	{
-		var button = (Button)sender;
+		var button = (ImageButton)sender;
 		await Navigation.PushAsync(new PlayPage(button.StyleId));
 	}
 

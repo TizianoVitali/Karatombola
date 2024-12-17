@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="Karatombola.Pages.ModalPage"
-             BackgroundColor="LightGray">
-    <StackLayout VerticalOptions="Center"
-                 HorizontalOptions="Center">
+             x:Class="Karatombola.Pages.ModalPage">
+
+    <VerticalStackLayout Padding="100, 100">
+        <VerticalStackLayout.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FFF7AD"
+                              Offset="0.1"/>
+                <GradientStop Color="#FFA9F9"
+                              Offset="1.0"/>
+            </LinearGradientBrush>
+        </VerticalStackLayout.Background>
+
         <Label Text="Cronologia brani estratti"
                FontSize="80"
                FontFamily="BriceBlack"
                HorizontalOptions="Center"/>
 
         <ScrollView HeightRequest="950"
-                    Padding="0,80">
-            <CollectionView x:Name="PlayedSongsCollectionView"
-                            HorizontalOptions="Center">
+                    WidthRequest="1400"
+                    Margin="0,80,0,40">
+            <CollectionView x:Name="PlayedSongsCollectionView">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="10"
@@ -29,9 +37,17 @@
             </CollectionView>
         </ScrollView>
 
-        <Button Text="Chiudi"
-                FontSize="60"
-                Clicked="OnCloseModalClicked"
-                HorizontalOptions="Center"/>
-    </StackLayout>
+        <Button
+            x:Name="btn_back"
+            Text="Chiudi"
+            FontSize="50"
+            TextColor="#FFD1C7"
+            FontFamily="DoyleRegular"
+            Clicked="OnCloseModalClicked"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            BackgroundColor="Black"
+            BorderWidth="5"
+            CornerRadius="12"/>
+    </VerticalStackLayout>
 </ContentPage>

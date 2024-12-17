@@ -3,7 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Karatombola.Pages.RulesPage"
              Shell.NavBarIsVisible="False">
-       <VerticalStackLayout Margin="100, 100, 100, 0">
+       <VerticalStackLayout Padding="100, 100">
+              <VerticalStackLayout.Background>
+                     <LinearGradientBrush>
+                            <GradientStop Color="#FFF7AD"
+                                          Offset="0.1"/>
+                            <GradientStop Color="#FFA9F9"
+                                          Offset="1.0"/>
+                     </LinearGradientBrush>
+              </VerticalStackLayout.Background>
 
               <Label
                      Text="Regolamento"
@@ -92,14 +100,18 @@
                      x:Name="btn_back"
                      Text="Indietro"
                      FontSize="30"
+                     TextColor="#FFD1C7"
+                     FontFamily="DoyleRegular"
                      Clicked="OnBackClick"
                      HorizontalOptions="Start"
                      VerticalOptions="End"
-                     BackgroundColor="#FFD7AFFF"
-                     BorderWidth="6"
+                     BackgroundColor="Black"
+                     BorderWidth="5"
                      BorderColor="Black"
-                     CornerRadius="0"
-                     Margin="30,0,0,0"/>
+                     CornerRadius="12"/>
+
+
+
               <Label
                      Text="v1.0"
                      Style="{StaticResource Headline}"

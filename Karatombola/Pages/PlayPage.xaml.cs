@@ -7,7 +7,7 @@ public partial class PlayPage : ContentPage
 {
     public Dictionary<int, string> playedSongList = new Dictionary<int, string>();
     int actualDraw = 0;
-
+    string kFileName = string.Empty, kTypeName = string.Empty;
     int counter = 1;
     Song song = null;
     public double Duration => player?.Duration ?? 1;
@@ -20,7 +20,6 @@ public partial class PlayPage : ContentPage
 
         btn_start.IsVisible = true;
 
-        string kFileName = string.Empty, kTypeName = string.Empty;
         switch (kType)
         {
             case "btn_k80":
@@ -32,9 +31,15 @@ public partial class PlayPage : ContentPage
             case "btn_k2000":
                 kFileName = "k_2000.csv";
                 kTypeName = "2000"; break;
+
             case "btn_kdisney":
                 kFileName = "k_disney.csv";
-                kTypeName = "Disney"; break;
+                kTypeName = "Disney";
+                btn_start.FontFamily = "Disney";
+                lbl_counter.FontFamily = "Disney";
+                lbl_type.FontFamily = "Disney";
+                break;
+
         }
         lbl_type.Text = kTypeName;
         SongUtil.ReadSongList(kFileName);
@@ -45,6 +50,12 @@ public partial class PlayPage : ContentPage
     {
         btn_start.IsVisible = false;
         lbl_counter.IsVisible = true;
+
+        string songPath = $"Raw/songs/countdown.mp3";
+        var path = await FileSystem.Current.OpenAppPackageFileAsync(songPath);
+        player = AudioManager.Current.CreatePlayer(path);
+        player.Play();
+
         lbl_counter.Text = "3";
         await Task.Delay(1000);
         lbl_counter.Text = "2";
@@ -91,7 +102,7 @@ public partial class PlayPage : ContentPage
         btn_play.IsVisible = false;
         player.Stop();
         drawSong();
-        isUpdatingSlider = false;
+        isUpdatingSlider = true;
     }
 
     private async void OnLinkClick(object sender, EventArgs e)
@@ -199,11 +210,14 @@ public partial class PlayPage : ContentPage
             actualDraw = drawNumber();
             song = SongUtil.songDictionary[actualDraw];
             lbl_title.Text = song.Title;
-            lbl_artist.Text = song.Artist;
+
+            lbl_artist.Text = song.Artist.Replace(",", ", ");
             lbl_drawCounter.Text = "Estrazione n. " + counter++.ToString();
             playedSongList[actualDraw] = song.Title;
 
-            var path = await FileSystem.Current.OpenAppPackageFileAsync("Raw/songs/Treasure.wav");
+            string songPath = $"Raw/songs/{kFileName.Replace(".csv", "")}/{song.FileName}";
+            var path = await FileSystem.Current.OpenAppPackageFileAsync(songPath);
+
             player = AudioManager.Current.CreatePlayer(path);
 
             song_slider.Value = player.CurrentPosition;
@@ -250,4 +264,6 @@ public partial class PlayPage : ContentPage
             await Task.Delay(500); // Aggiorna ogni 500ms
         }
     }
+
+
 }

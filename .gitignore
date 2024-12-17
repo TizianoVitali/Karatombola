@@ -71,3 +71,7 @@ Icon?
 *.sqlite
 *.sqlite-journal
 *.sqlite-wal
+
+# Song files
+Resources/Raw/songs/k_2000/
+Resources/Raw/songs/k_disney/

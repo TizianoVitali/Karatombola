@@ -14,12 +14,19 @@ namespace Karatombola
 
             try
             {
-                using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("csv/" + fileName);
+                using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync("Raw/csv/" + fileName);
                 using StreamReader reader = new StreamReader(fileStream);
 
                 using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
 
-                songList = csv.GetRecords<Song>().ToList();
+                try
+                {
+                    songList = csv.GetRecords<Song>().ToList();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Errore durante la lettura del file: {ex.Message}");
+                }
 
                 songDictionary = new Dictionary<int, Song>(90);
 

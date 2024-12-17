@@ -4,7 +4,15 @@
              x:Class="Karatombola.Pages.SongListPage"
              Shell.NavBarIsVisible="False">
 
-    <VerticalStackLayout Margin="100, 100, 100, 0">
+    <VerticalStackLayout Padding="100, 100, 100, 0">
+        <VerticalStackLayout.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FFF7AD"
+                              Offset="0.1"/>
+                <GradientStop Color="#FFA9F9"
+                              Offset="1.0"/>
+            </LinearGradientBrush>
+        </VerticalStackLayout.Background>
 
         <Grid>
             <Grid.ColumnDefinitions>
@@ -83,14 +91,14 @@
             x:Name="btn_back"
             Text="Indietro"
             FontSize="30"
-            SemanticProperties.Hint="Clicca per tornare alla pagina iniziale!"
+            TextColor="#FFD1C7"
+            FontFamily="DoyleRegular"
             Clicked="OnBackClick"
             HorizontalOptions="Start"
             VerticalOptions="End"
-            BackgroundColor="#FFD7AFFF"
-            BorderWidth="6"
-            BorderColor="Black"
-            CornerRadius="0"
+            BackgroundColor="Black"
+            BorderWidth="5"
+            CornerRadius="12"
             Margin="0,40,0,0"/>
 
     </VerticalStackLayout>

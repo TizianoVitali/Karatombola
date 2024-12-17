@@ -20,7 +20,7 @@ public static class SecondsToStringConverter
             formatBuilder.Append(@"hh\:");
         }
 
-        formatBuilder.Append(@"mm\:ss");
+        formatBuilder.Append(@"m\:ss");
 
         return timeSpan.ToString(formatBuilder.ToString());
     }

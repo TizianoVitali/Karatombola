@@ -16,6 +16,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 				fonts.AddFont("Brice-Black.ttf", "BriceBlack");
 				fonts.AddFont("WaltographUI.ttf", "Disney");
+				fonts.AddFont("Doyle-Regular.ttf", "DoyleRegular");
 			});
 
 		builder.Services.AddSingleton(AudioManager.Current);
